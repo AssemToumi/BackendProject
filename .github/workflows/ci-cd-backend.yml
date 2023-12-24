@@ -1,0 +1,35 @@
+name: CI/CD Backend
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1'
+
+    - name: Build and Test
+      run: |
+        dotnet build --configuration Release
+        dotnet test --configuration Release
+
+    - name: Publish Artifact
+      if: success()
+      run: dotnet publish -c Release -o $(Build.ArtifactStagingDirectory)
+
+    - name: Upload Artifact
+      if: success()
+      uses: actions/upload-artifact@v2
+      with:
+        name: published-app
+        path: $(Build.ArtifactStagingDirectory)/BackendProject
