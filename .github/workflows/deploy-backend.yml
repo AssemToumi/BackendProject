@@ -1,0 +1,30 @@
+name: Deploy Backend
+
+on:
+  workflow_run:
+    workflows: ["CI/CD Backend"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Deploy to Dev
+      if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'CI/CD Backend'
+      run: |
+        # Logic to deploy to dev environment
+
+    - name: Deploy to Staging
+      if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'CI/CD Backend'
+      run: |
+        # Logic to deploy to staging environment
+
+    - name: Deploy to Prod
+      if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'CI/CD Backend'
+      run: |
+        # Logic to deploy to production environment
