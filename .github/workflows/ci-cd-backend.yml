@@ -25,11 +25,11 @@ jobs:
 
     - name: Publish Artifact
       if: success()
-      run: dotnet publish BackendProject/BackendProject.csproj -c Release -o release — nologo
+      run: dotnet publish BackendProject.csproj -c Release -o release — nologo
 
     - name: Upload Artifact
       if: success()
       uses: actions/upload-artifact@v2
       with:
         name: published-app
-        path: /home/runner/work/BackendProject/BackendProject/release/
+        path: /home/runner/work/BackendProject/release/
