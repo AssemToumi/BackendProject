@@ -25,7 +25,9 @@ jobs:
 
     - name: Publish Artifact
       if: success()
-      run: dotnet publish BackendProject.csproj -c Release -o release -nologo
+      run: |
+        dotnet publish BackendProject.csproj -c Release -o release -nologo
+        ls -R release  # Print directory structure for debugging
 
     - name: Upload Artifact
       if: success()
