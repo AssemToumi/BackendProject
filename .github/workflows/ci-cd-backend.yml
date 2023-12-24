@@ -25,11 +25,11 @@ jobs:
 
     - name: Publish Artifact
       if: success()
-      run: dotnet publish -c Release -o $(Build.ArtifactStagingDirectory)
+      run: dotnet publish -c Release -o ${{ env.BUILD_ARTIFACTSTAGINGDIRECTORY }}
 
     - name: Upload Artifact
       if: success()
       uses: actions/upload-artifact@v2
       with:
         name: published-app
-        path: $(Build.ArtifactStagingDirectory)/BackendProject
+        path: ${{ env.BUILD_ARTIFACTSTAGINGDIRECTORY }}/BackendProject
