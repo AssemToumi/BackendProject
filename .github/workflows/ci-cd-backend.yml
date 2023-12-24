@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@2.311.0
+      uses: actions/checkout@v2
 
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
@@ -25,12 +25,11 @@ jobs:
 
     - name: Publish Artifact
       if: success()
-      run: dotnet publish BackendProject.csproj -c Release -o release --nologo
+      run: dotnet publish BackendProject.csproj -c Release -o release -nologo
 
     - name: Upload Artifact
       if: success()
-      uses: actions/upload-artifact@2.311.0
+      uses: actions/upload-artifact@v2
       with:
         name: published-app
         path: /home/runner/work/BackendProject/release/
-
