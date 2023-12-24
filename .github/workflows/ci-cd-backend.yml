@@ -25,11 +25,11 @@ jobs:
 
     - name: Publish Artifact
       if: success()
-      run: dotnet publish -c Release -o ${{ env.BUILD_ARTIFACTSTAGINGDIRECTORY }}
+      run: dotnet publish BackendProject/BackendProject.csproj -c Release -o release — nologo
 
     - name: Upload Artifact
       if: success()
       uses: actions/upload-artifact@v2
       with:
         name: published-app
-        path: ${{ env.BUILD_ARTIFACTSTAGINGDIRECTORY }}/BackendProject
+        path: /home/runner/work/BackendProject/BackendProject/release/
