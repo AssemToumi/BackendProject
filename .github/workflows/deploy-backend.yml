@@ -18,6 +18,22 @@ jobs:
       if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'CI/CD Backend'
       run: |
         # Logic to deploy to dev environment
+        # Install Heroku CLI
+        curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
+        # Login to Heroku (replace 'your-heroku-email' and 'your-heroku-api-key' with your Heroku credentials)
+        heroku login -i
+
+        # Add Heroku remote to the Git repository (replace 'your-heroku-app' with your Heroku app name)
+        git remote add heroku https://git.heroku.com/your-heroku-app.git
+
+        # Deploy to Heroku
+        git push heroku main:main
+
+        # Release the app (if needed)
+        heroku run --app your-heroku-app "dotnet ef database update"
+
+        # Additional commands or scripts can be added as needed
 
     - name: Deploy to Staging
       if: github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.name == 'CI/CD Backend'

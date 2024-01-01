@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f9f4a98-8076-4a8b-99c3-d8af0591f79a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/BackendProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BusinessObjects/BusinessObjects.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BusinessObjects/Medication.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BusinessObjects/Order.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BusinessObjects/Patient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Microservices-API.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Controllers/OrdersController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Data/OrderServiceContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Migrations/20220528165654_Initial.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Migrations/20220528165654_Initial.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Migrations/OrderServiceContextModelSnapshot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Properties/serviceDependencies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/Properties/serviceDependencies.local.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/ValidationService.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OrderService/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci-cd-backend.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci-cd-backend.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy-backend.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy-backend.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendProject.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendProject.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackendProject.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2aKK1QjbuFgyTlZkXDzksdbtbQE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Assem Toumi/source/repos/BackendProject"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f9f4a98-8076-4a8b-99c3-d8af0591f79a" name="Changes" comment="" />
+      <created>1704061617075</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704061617075</updated>
+    </task>
+    <servers />
+  </component>
+</project>
