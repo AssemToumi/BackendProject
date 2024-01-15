@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PrescriptionService.Business\Prescription.Business.csproj" />
+    <ProjectReference Include="..\PrescriptionService.Facades.Abstractions\Prescription.Facades.Abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Helper">
+      <HintPath>..\..\..\..\Lib\Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="MedsecPrescriCoreApiV1">
+      <HintPath>..\..\..\..\Lib\MedsecPrescriCoreApiV1.dll</HintPath>
+    </Reference>
+    <Reference Include="Tools">
+      <HintPath>..\..\..\..\Lib\Tools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -2,8 +2,7 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.ConfigureAppConfiguration((hostingContext, config) =>
-    {
+builder.WebHost.ConfigureAppConfiguration((hostingContext, config) => {
         config
         .SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)
         .AddJsonFile("apiGateway.json", optional: false, reloadOnChange: true);
@@ -18,6 +17,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+// Set the base path for the application
+app.UsePathBase("/Prescription-be");
+
+app.UseCors(builder =>
+    builder.AllowAnyOrigin()
+           .AllowAnyMethod()
+           .AllowAnyHeader()
+);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
